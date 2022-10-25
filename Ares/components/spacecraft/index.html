@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+
+
+<!-- head -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SPACECRAFT | ARES</title>
+  <link href="https://Ares.tianqifeng1.repl.co/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="https://Ares.tianqifeng1.repl.co/Favicon.jpg">
+</head>
+
+
+<div id="screen-darkener"></div>
+
+
+<!-- body -->
+
+
+
+
+
+
+
+
+
+	
+
+<!-- style -->
+	
+<style>
+.container {
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+	left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.vertical-center-mission {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizontal-center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateYX-50%);
+  transform: translateX(-50%);
+}
+	
+.horizontal-center-nav {
+  margin: 0;
+  position: absolute;
+  top: 8vh;
+	left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+</style>
+
+
+
+
+
+
+
+	
+
+<!-- header nav and menu -->
+
+
+
+
+	
+
+	
+<div id="menu-darkener" style="width: 80vw;height: 100vh;background-color: rgba(0,0,0,0.5);position: fixed;z-index:10">
+</div>
+	
+<nav id="topNav" style="background-color:rgba(0,0,0,0);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;width:100%;height:125px;font-size:18.5px;z-index:5;position:fixed;border-width:0;border:0;border-bottom-width:0.5px;border-bottom-color:rgba(140,140,140,0.5);border-style:solid;">
+	<div style="color:white">
+		<a href="https://Ares.tianqifeng1.repl.co/"><div id="menu-icon" style="width:125px;height:125px;background-image:url(https://Ares.tianqifeng1.repl.co/LogoNoText.png);background-position:center;background-size:100%;position:absolute;z-index:10">
+			<span></span>
+		</div></a>
+		<div style="color:white">
+		<center><div class="vertical-center" style="position:absolute;padding:0;border:0;margin:0;width:100%;">
+			<a class="footer-text-left" href="https://ares.tianqifeng1.repl.co/" style="margin-right:4%">HOME</a>
+			<a class="footer-text-left" href="https://Ares.tianqifeng1.repl.co/purpose/">PURPOSE</a>
+			<a class="footer-text-right" href="https://Ares.tianqifeng1.repl.co/mission/" style="margin-left:4%">MISSION</a>
+			<a class="footer-text-right" href="https://Ares.tianqifeng1.repl.co/components/" style="margin-left:4%">COMPONENTS</a>
+		</div></center>
+	</div>
+</nav>
+
+
+
+
+<div id="menu-darkener-1" style="width: 20vw;height: 100vh;background-color: rgba(0,0,0,0.5);position: fixed;right:0;z-index:10">
+</div>
+
+	
+<nav id="menuNav" style="height:100vh;width:20vw;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;top:0;color:white;background-color:black;border:0;margin:0;padding:0;text-align:right;position:fixed;margin-left:100vw;z-index:15">
+
+		<div style="margin-top:18vh;position:absolute;font-size:2.5vh;right:3vh;z-index:5;padding-right:3vw;width:15vw" id="menu-text-container">
+			<a class="menu-text" href="https://ares.tianqifeng1.repl.co/" style="margin-top:2vh;position:absolute;right:0" id="menu-text-1">
+				HOME
+				<span class="menu-text-underline" id="menu-text-underline-1"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/purpose/" style="margin-top:8vh;position:absolute;right:0" id="menu-text-2">
+				PURPOSE
+				<span class=menu-text-underline id="menu-text-underline-2"></span>
+			</a>
+			
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/mission/" style="margin-top:14vh;position:absolute;right:0" id="menu-text-3">
+				THE MISSION
+				<span class=menu-text-underline id="menu-text-underline-3"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/launch-vehicles/" style="margin-top:20vh;position:absolute;right:0" id="menu-text-4">
+				LAUNCH VEHICLES
+				<span class=menu-text-underline id="menu-text-underline-4"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/spacecraft/" style="margin-top:26vh;position:absolute;right:0" id="menu-text-5">
+				SPACECRAFT
+				<span class=menu-text-underline id="menu-text-underline-5"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/colony/" style="margin-top:32vh;position:absolute;right:0" id="menu-text-6">
+				MARS COLONY
+				<span class=menu-text-underline id="menu-text-underline-6"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/mars-vehicles/" style="margin-top:38vh;position:absolute;right:0" id="menu-text-7">
+				MARS VEHICLES
+				<span class=menu-text-underline id="menu-text-underline-7"></span>
+			</a>
+
+			
+		</div>
+</nav>
+
+
+	<div id="menu-click" style="position:fixed;width:16vh;height:16vh;top:0;right:0"></div>
+
+	<div id="nav-icon4" style="position:fixed;margin-right:3vw;right:0;margin-top:6vh;top:0;z-index:20;">
+  	<span></span>
+  	<span></span>
+  	<span></span>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<!-- body content -->
+
+
+
+
+
+
+
+
+
+<body id="body" class="body" style="background-color: black; width: 100vw; font-weight: 300; padding: 0px; border: 0px; margin: 0px;"><center>
+
+
+	<div class="section-full-width-height home-cover" style="">
+		<img class="scrollIndicator" src="https://Ares.tianqifeng1.repl.co/Scrollindicator.png" height="33.5px" width="32.5px" style="padding-top:90vh">
+		<div id="cover-text" class="vertical-center" style="color:white;margin:0;border:0;padding-left:0;font-weight:100;font-size:7vh;letter-spacing:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+			SPACECRAFT
+		</div>
+	</div>
+
+	
+	<div class="section-half-height" style=""></div>
+
+	<div class="section-full-width-height component-section container" id="lv-section" style="background-image:url(https://Ares.tianqifeng1.repl.co/ipsc2.png)">
+		<div class="component-text-container">
+			<p class="component-header component-reveals">INTERPLANETARY SPACECRAFT</p>
+			<p class="component-desc component-reveals">THE MOST ADVANCED SPACECRAFT IN HISTORY</p>
+			<a href="https://Ares.tianqifeng1.repl.co/components/spacecraft/ipsc/">
+				<span class="component-button component-reveals">
+					<span>
+						<p class="component-button-text">LEARN MORE</p>
+					</span>
+				</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="section-full-width-height component-section container" id="sc-section">
+		<div class="component-text-container">
+			<p class="component-header component-reveals">CREW LAUNCH AND ENTRY SPACECRAFT</p>
+			<p class="component-desc component-reveals">EARTH LAUNCH AND REENTRY CAPSULE</p>
+			<a href="https://Ares.tianqifeng1.repl.co/components/spacecraft/cles/">
+				<span class="component-button component-reveals">
+					<span>
+						<p class="component-button-text">LEARN MORE</p>
+					</span>
+				</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="section-full-width-height component-section container" id="colony-section">
+		<div class="component-text-container">
+			<p class="component-header component-reveals">MARS MATERIAL DESCENT CAPSULE</p>
+			<p class="component-desc component-reveals">HEAVIEST NON-HUMAN LANDER</p>
+			<a href="https://Ares.tianqifeng1.repl.co/components/spacecraft/mmdc">
+				<span class="component-button component-reveals">
+					<span>
+						<p class="component-button-text">LEARN MORE</p>
+					</span>
+				</span>
+			</a>
+		</div>
+	</div>
+
+
+
+
+	
+	
+	
+
+
+
+<!-- footer -->
+	
+<div style="width:100vw;height:10vh;background-color:black">
+	<div style="color:white;margin-top:27.5vh;margin-bottom:10vh;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:2.5vh">
+		<a class="footer-text-left" style="margin-right:6vh" href="https://ares.tianqifeng1.repl.co/">HOME</a>
+		<a class="footer-text-left" style="margin-right:6vh" href="https://Ares.tianqifeng1.repl.co/purpose/">PURPOSE</a>
+		<a class="footer-text-right" style="" href="https://Ares.tianqifeng1.repl.co/mission/">MISSION</a>
+		<a class="footer-text-right" style="margin-left:6vh" href="https://Ares.tianqifeng1.repl.co/components/">COMPONENTS</a>
+	</div>
+</div>
+	
+</body>
+</center>
+
+
+	
+
+
+
+
+
+
+
+<!-- script -->
+
+<script src="https://Ares.tianqifeng1.repl.co/script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+	$(document).ready(function() {
+	$('#nav-icon4').click(function() {
+		$(this).toggleClass('open');		
+		  $('#menuNav').toggleClass("menu-open",function() {
+          $(this).remove();
+			});
+		
+			$('#menu-darkener').toggleClass("menu-darken",function() {
+          $(this).remove();
+			});
+			$('#menu-darkener-1').toggleClass("menu-darken",function() {
+          $(this).remove();
+			});
+
+			$('#body').toggleClass("overflow-disable",function() {
+          $(this).remove();
+			});
+
+			$('.menu-text').toggleClass("menu-text-show",function() {
+					$(this).remove();
+			});
+
+			$('.menu-text-underline').toggleClass("menu-text-underline-show",function() {
+					$(this).remove();
+			});
+		});
+	});
+
+	
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+	
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+	
+	      // Store hash
+	      var hash = this.hash;
+	
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+</script>

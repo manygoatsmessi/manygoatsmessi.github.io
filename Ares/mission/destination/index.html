@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+
+
+<!-- head -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DESTINATION | ARES</title>
+  <link href="https://Ares.tianqifeng1.repl.co/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="https://Ares.tianqifeng1.repl.co/Favicon.jpg">
+</head>
+
+
+<div id="screen-darkener"></div>
+
+
+<!-- body -->
+
+
+
+
+
+
+
+
+
+	
+
+<!-- style -->
+	
+<style>
+.container {
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+	left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.vertical-center-mission {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizontal-center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateYX-50%);
+  transform: translateX(-50%);
+}
+	
+.horizontal-center-nav {
+  margin: 0;
+  position: absolute;
+  top: 8vh;
+	left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+</style>
+
+
+
+
+
+
+
+	
+
+<!-- header nav and menu -->
+
+
+
+
+	
+
+	
+<div id="menu-darkener" style="width: 80vw;height: 100vh;background-color: rgba(0,0,0,0.5);position: fixed;z-index:10">
+</div>
+	
+<nav id="topNav" style="background-color:rgba(0,0,0,0);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;width:100%;height:125px;font-size:18.5px;z-index:5;position:fixed;border-width:0;border:0;border-bottom-width:0.5px;border-bottom-color:rgba(140,140,140,0.5);border-style:solid;">
+	<div style="color:white">
+		<a href="https://Ares.tianqifeng1.repl.co/"><div id="menu-icon" style="width:125px;height:125px;background-image:url(https://Ares.tianqifeng1.repl.co/LogoNoText.png);background-position:center;background-size:100%;position:absolute;z-index:10">
+			<span></span>
+		</div></a>
+		<div style="color:white">
+		<center><div class="vertical-center" style="position:absolute;padding:0;border:0;margin:0;width:100%;">
+			<a class="footer-text-left" href="https://ares.tianqifeng1.repl.co/" style="margin-right:4%">HOME</a>
+			<a class="footer-text-left" href="https://Ares.tianqifeng1.repl.co/purpose/">PURPOSE</a>
+			<a class="footer-text-right" href="https://Ares.tianqifeng1.repl.co/mission/" style="margin-left:4%">MISSION</a>
+			<a class="footer-text-right" href="https://Ares.tianqifeng1.repl.co/components/" style="margin-left:4%">COMPONENTS</a>
+		</div></center>
+	</div>
+</nav>
+
+
+
+
+<div id="menu-darkener-1" style="width: 20vw;height: 100vh;background-color: rgba(0,0,0,0.5);position: fixed;right:0;z-index:10">
+</div>
+
+	
+<nav id="menuNav" style="height:100vh;width:20vw;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;top:0;color:white;background-color:black;border:0;margin:0;padding:0;text-align:right;position:fixed;margin-left:100vw;z-index:15">
+
+		<div style="margin-top:18vh;position:absolute;font-size:2.5vh;right:3vh;z-index:5;padding-right:3vw;width:15vw" id="menu-text-container">
+			<a class="menu-text" href="https://ares.tianqifeng1.repl.co/" style="margin-top:2vh;position:absolute;right:0" id="menu-text-1">
+				HOME
+				<span class="menu-text-underline" id="menu-text-underline-1"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/purpose/" style="margin-top:8vh;position:absolute;right:0" id="menu-text-2">
+				PURPOSE
+				<span class=menu-text-underline id="menu-text-underline-2"></span>
+			</a>
+			
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/mission/" style="margin-top:14vh;position:absolute;right:0" id="menu-text-3">
+				THE MISSION
+				<span class=menu-text-underline id="menu-text-underline-3"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/launch-vehicles/" style="margin-top:20vh;position:absolute;right:0" id="menu-text-4">
+				LAUNCH VEHICLES
+				<span class=menu-text-underline id="menu-text-underline-4"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/spacecraft/" style="margin-top:26vh;position:absolute;right:0" id="menu-text-5">
+				SPACECRAFT
+				<span class=menu-text-underline id="menu-text-underline-5"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/colony/" style="margin-top:32vh;position:absolute;right:0" id="menu-text-6">
+				MARS COLONY
+				<span class=menu-text-underline id="menu-text-underline-6"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/mars-vehicles/" style="margin-top:38vh;position:absolute;right:0" id="menu-text-7">
+				MDV/MAV
+				<span class=menu-text-underline id="menu-text-underline-7"></span>
+			</a>
+
+			
+		</div>
+</nav>
+
+
+	<div id="menu-click" style="position:fixed;width:16vh;height:16vh;top:0;right:0"></div>
+
+	<div id="nav-icon4" style="position:fixed;margin-right:3vw;right:0;margin-top:6vh;top:0;z-index:20;">
+  	<span></span>
+  	<span></span>
+  	<span></span>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<!-- body content -->
+
+
+
+
+
+
+
+
+
+<body id="body" class="body" style="background-color: black; width: 100vw; font-weight: 300; padding: 0px; border: 0px; margin: 0px;"><center>
+
+
+	<div class="section-full-width-height home-cover" id="destination-cover" style="">
+		<img class="scrollIndicator" src="https://Ares.tianqifeng1.repl.co/Scrollindicator.png" height="33.5px" width="32.5px" style="padding-top:90vh">
+		<p id="cover-text" class="vertical-center" style="color:white;margin:0;border:0;padding-left:0;font-weight:100;font-size:7vh;letter-spacing:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+			DESTINATION
+		</p>
+	</div>
+
+	
+	<div class="section-half-height" style=""></div>
+
+	<div class="section-full-width-height container" style="">
+		<h1 id="destination-mars-header">MARS</h1>
+		<table id="mars-info-table" class="horizontal-center">
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">RADIUS</td>
+				<td class="mars-info-right-cell"><b>3,389.5 km</b> / 2,106.1 mi</td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">SURFACE AREA</td>
+				<td class="mars-info-right-cell"><b>144,370,000 km<sup>2</sup></b> / 55,740,000 mi<sup>2</sup></td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">VOLUME</td>
+				<td class="mars-info-right-cell"><b>	1.63 × 10<sup>11</sup> km<sup>3</sup></b> / 1.63 × 10<sup>11</sup> mi<sup>3</sup></td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">MASS</td>
+				<td class="mars-info-right-cell"><b>6.4171 × 10<sup>23</sup> kg</b> / 14.15 × 10<sup>23</sup> lbs</td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">DENSITY</td>
+				<td class="mars-info-right-cell"><b>3.93 g/cm<sup>3</sup></b>
+/ 0.14 lb/in<sup>3</sup></td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">SURFACE GRAVITY</td>
+				<td class="mars-info-right-cell"><b>3.72 m/s<sup>2</sup></b>
+/ 12.2 ft/s<sup>2</sup></td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">ATMOSPHERIC PRESSURE</td>
+				<td class="mars-info-right-cell"><b>0.636 kPa</b> / 0.092 psi</td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">SEMI-MAJOR AXIS</td>
+				<td class="mars-info-right-cell"><b>227,939,366 km</b> / 141,634,956 mi</td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">SIDEREAL DAY</td>
+				<td class="mars-info-right-cell"><b>24h 37m 22.7s</b></td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">SIDEREAL YEAR</td>
+				<td class="mars-info-right-cell"><b>686d 11m 23d</b></td>
+			</tr>
+			<tr class="mars-info-table-row container">
+				<td class="border-bottom"></td>
+				<td class="mars-info-left-cell">MOONS</td>
+				<td class="mars-info-right-cell"><b>2</b> / PHOBOS, DEIMOS</td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div class="quarter-space"></div>
+
+
+
+	<div class="section-half-height container" id="mars-counter-section">
+		<span class="vertical-center" id="mars-counter-span">
+			<div id="mars-counter-1" class="vertical-center-mission mars-counter">
+				<h1 class="mars-counter-number" id="mars-counter-number-distance">						</h1>
+				<p class="mars-counter-text" id="mars-counter-text-distance">AVG DISTANCE FROM EARTH (MILLIONS OF KM)</p>
+			</div>
+			<div id="mars-counter-2" class="vertical-center mars-counter">
+				<h1 class="mars-counter-number" id="mars-counter-number-months"></h1>
+				<p class="mars-counter-text" id="mars-counter-text-months">MONTHS TO ARRIVE</p>
+			</div>
+			<div id="mars-counter-3" class="vertical-center-mission mars-counter">
+				<h1 class="mars-counter-number" id="mars-counter-number-gravity"></h1>
+				<p class="mars-counter-text" id="mars-counter-text-gravity">PERCENT OF EARTH GRAVITY</p>
+			</div>
+		</span>
+	</div>
+
+
+
+
+
+	<div id="landing-site-title" class="section-full-width-height container" style="color:white;background:linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)),url(https://Ares.tianqifeng1.repl.co/landing-site.jpg);background-position:center;background-size:100%;font-size:5vh;padding-top:47.5vh;letter-spacing:10px;font-weight:400;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:200">
+	<p class="vertical-center">LANDING SITE</p>
+	</div>
+
+	<div class="section-full-width-height container">
+		<p class="location-text vertical-center-mission">The Ares Colony will be situated in the Chryse Chaos, an area slightly above the equator near Mars' largest canyon, Valles Marineris. The landing site will be on the south-west rim of one of the craters in the area. This crater is not yet named, and is decently large with a diameter of roughly 20 kilometers. It is around 200 km west of another major crater, Crater Mojave and 200 km north-east of Da Vinci Crater.
+		</p>
+		<table id="location-table" class="vertical-center-mission">
+			<tr class="location-row">
+				<td class="location-cell location-left">
+					LATITUDE
+				</td>
+				<td class="location-cell location-right">
+					6.6455° N
+				</td>
+				<td class="location-span"></td>
+			</tr>
+			<tr class="location-row">
+				<td class="location-cell location-left">
+					LONGITUDE
+				</td>
+				<td class="location-cell location-right">
+					36.3868° W
+				</td>
+				<td class="location-span"></td>
+			</tr>
+		</table>
+	</div>
+	
+	
+
+	<div class="section-full-width-height container">
+		<table id="mars-map">
+			<tr class="mars-map-header-row">
+				<th class="mars-map-header">
+					LANDING LOCATION
+				</th>
+				<td class="mars-map-center-cell"></td>
+				<th class="mars-map-header">
+					AREA IN LEFT INSET
+				</th>
+			</tr>
+			<tr class="mars-map-row">
+				<td class="mars-map container" id="large-mars-map">
+					<div id="large-map-marker"></div>
+				</td>
+				<td class="mars-map-center-cell">
+					<span class="mars-map-vertical-line horizontal-center"></span>
+				</td>
+				<td class="mars-map container" id="small-mars-map">
+					<div id="small-map-marker">
+						<span id="small-map-signal"></span>
+						<p class="map-marker-text">ARES LANDING SITE</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	
+
+
+
+<!-- footer -->
+	
+<div style="width:100vw;height:10vh;background-color:black">
+	<div style="color:white;margin-top:27.5vh;margin-bottom:10vh;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:2.5vh">
+		<a class="footer-text-left" style="margin-right:6vh" href="https://ares.tianqifeng1.repl.co/">HOME</a>
+		<a class="footer-text-left" style="margin-right:6vh" href="https://Ares.tianqifeng1.repl.co/purpose/">PURPOSE</a>
+		<a class="footer-text-right" style="" href="https://Ares.tianqifeng1.repl.co/mission/">MISSION</a>
+		<a class="footer-text-right" style="margin-left:6vh" href="https://Ares.tianqifeng1.repl.co/components/">COMPONENTS</a>
+	</div>
+</div>
+	
+</body>
+</center>
+
+
+	
+
+
+
+
+
+
+
+<!-- script -->
+
+<script src="https://Ares.tianqifeng1.repl.co/script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+	$(document).ready(function() {
+	$('#nav-icon4').click(function() {
+		$(this).toggleClass('open');		
+		  $('#menuNav').toggleClass("menu-open",function() {
+          $(this).remove();
+			});
+		
+			$('#menu-darkener').toggleClass("menu-darken",function() {
+          $(this).remove();
+			});
+			$('#menu-darkener-1').toggleClass("menu-darken",function() {
+          $(this).remove();
+			});
+
+			$('#body').toggleClass("overflow-disable",function() {
+          $(this).remove();
+			});
+
+			$('.menu-text').toggleClass("menu-text-show",function() {
+					$(this).remove();
+			});
+
+			$('.menu-text-underline').toggleClass("menu-text-underline-show",function() {
+					$(this).remove();
+			});
+		});
+	});
+
+	
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+	
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+	
+	      // Store hash
+	      var hash = this.hash;
+	
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+</script>

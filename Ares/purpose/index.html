@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+
+
+<!-- head -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PURPOSE | ARES</title>
+  <link href="https://Ares.tianqifeng1.repl.co/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="https://Ares.tianqifeng1.repl.co/Favicon.jpg">
+</head>
+
+
+<div id="screen-darkener"></div>
+
+
+<!-- body -->
+
+
+
+
+
+
+
+
+
+	
+
+<!-- style -->
+	
+<style>
+.container {
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+	left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.horizontal-center-nav {
+  margin: 0;
+  position: absolute;
+  top: 8vh;
+	left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+</style>
+
+
+
+
+
+
+
+	
+
+<!-- header nav and menu -->
+
+
+
+
+	
+
+	
+<div id="menu-darkener" style="width: 80vw;height: 100vh;background-color: rgba(0,0,0,0.5);position: fixed;z-index:10">
+</div>
+	
+<nav id="topNav" style="background-color:rgba(0,0,0,0);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;width:100%;height:125px;font-size:18.5px;z-index:5;position:fixed;border-width:0;border:0;border-bottom-width:0.5px;border-bottom-color:rgba(140,140,140,0.5);border-style:solid;">
+	<div style="color:white">
+		<a href="https://Ares.tianqifeng1.repl.co/"><div id="menu-icon" style="width:125px;height:125px;background-image:url(https://Ares.tianqifeng1.repl.co/LogoNoText.png);background-position:center;background-size:100%;position:absolute;z-index:10">
+			<span></span>
+		</div></a>
+		<div style="color:white">
+		<center><div class="vertical-center" style="position:absolute;padding:0;border:0;margin:0;width:100%;">
+			<a class="footer-text-left" href="https://ares.tianqifeng1.repl.co/" style="margin-right:4%">HOME</a>
+			<a class="footer-text-left" href="https://Ares.tianqifeng1.repl.co/purpose/">PURPOSE</a>
+			<a class="footer-text-right" href="https://Ares.tianqifeng1.repl.co/mission/" style="margin-left:4%">MISSION</a>
+			<a class="footer-text-right" href="https://Ares.tianqifeng1.repl.co/components/" style="margin-left:4%">COMPONENTS</a>
+		</div></center>
+	</div>
+</nav>
+
+
+
+
+<div id="menu-darkener-1" style="width: 20vw;height: 100vh;background-color: rgba(0,0,0,0.5);position: fixed;right:0;z-index:10">
+</div>
+
+	
+<nav id="menuNav" style="height:100vh;width:20vw;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;top:0;color:white;background-color:black;border:0;margin:0;padding:0;text-align:right;position:fixed;margin-left:100vw;z-index:15">
+
+		<div style="margin-top:18vh;position:absolute;font-size:2.5vh;right:3vh;z-index:5;padding-right:3vw;width:15vw" id="menu-text-container">
+			<a class="menu-text" href="https://ares.tianqifeng1.repl.co/" style="margin-top:2vh;position:absolute;right:0" id="menu-text-1">
+				HOME
+				<span class="menu-text-underline" id="menu-text-underline-1"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/purpose/" style="margin-top:8vh;position:absolute;right:0" id="menu-text-2">
+				PURPOSE
+				<span class=menu-text-underline id="menu-text-underline-2"></span>
+			</a>
+			
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/mission/" style="margin-top:14vh;position:absolute;right:0" id="menu-text-3">
+				THE MISSION
+				<span class=menu-text-underline id="menu-text-underline-3"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/launch-vehicles/" style="margin-top:20vh;position:absolute;right:0" id="menu-text-4">
+				LAUNCH VEHICLES
+				<span class=menu-text-underline id="menu-text-underline-4"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/spacecraft/" style="margin-top:26vh;position:absolute;right:0" id="menu-text-5">
+				SPACECRAFT
+				<span class=menu-text-underline id="menu-text-underline-5"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/colony/" style="margin-top:32vh;position:absolute;right:0" id="menu-text-6">
+				MARS COLONY
+				<span class=menu-text-underline id="menu-text-underline-6"></span>
+			</a>
+
+			<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/mars-vehicles/" style="margin-top:38vh;position:absolute;right:0" id="menu-text-7">
+				MDV/MAV
+				<span class=menu-text-underline id="menu-text-underline-7"></span>
+			</a>
+
+			
+		</div>
+</nav>
+
+
+	<div id="menu-click" style="position:fixed;width:16vh;height:16vh;top:0;right:0"></div>
+
+	<div id="nav-icon4" style="position:fixed;margin-right:3vw;right:0;margin-top:6vh;top:0;z-index:20;">
+  	<span></span>
+  	<span></span>
+  	<span></span>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<!-- body content -->
+
+
+
+
+
+
+
+
+
+<body id="body" class="body" style="background-color: black; width: 100vw; font-weight: 300; padding: 0px; border: 0px; margin: 0px;"><center>
+
+
+	<div class="section-full-width-height home-cover" style="">
+		<img class="scrollIndicator" src="https://Ares.tianqifeng1.repl.co/Scrollindicator.png" height="33.5px" width="32.5px" style="padding-top:90vh">
+		<p id="cover-text" class="vertical-center" style="color:white;margin:0;border:0;padding-left:5vw;font-weight:100;font-size:7vh;letter-spacing:5vw;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+			PURPOSE
+		</p>
+	</div>
+
+	
+	<div class="quarter-space" style=""></div>
+
+	<div class="quarter-space" id="purpose-fixed-bg"></div>
+
+		
+	<div class="container" style="background-color:black;font-size:22.5px;height:100vh;width:100%;text-align:center;">
+		<center><p class="vertical-center" style="width:80%;color:white;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;line-height:40px">
+				Mars is such an intriguing planet. This is because it is so similar to the Earth. With a similar axial tilt, average temperature, day length and size, there has even been evidence of liquid water on the planet's surface, many years ago. These reasons make the exploration of this world a certainty. Throughout history, multiple nations have sent multiple satellites, rovers and landers to the red planet. One thing that has not happenned yet, however, is human exploration of Mars. Ares will be the first step in this endeavor. It will allow the first ever humans to step on the surface of Mars.
+		</p></center>
+	</div>
+
+
+
+
+
+	<div style="color:white;background:linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url(https://Ares.tianqifeng1.repl.co/mars1.jpg);background-position:center;background-size:100%;font-size:5vh;padding-top:47.5vh;letter-spacing:10px;font-weight:400;padding-bottom:46vh;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:100">
+	WHY WE ARE GOING TO MARS
+	</div>
+
+	<div class="section-half-height" style=""></div>
+	
+	<table id="purpose-table">
+		<tr id="purpose-row">
+			<td id="purpose-cell" class="container">
+				<div id="purpose-cell-div" class="container">
+					<span class="vertical-center" id="purpose-cell-span" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(https://Ares.tianqifeng1.repl.co/purpose-mtv-2.png);background-size: 400%;background-repeat: no-repeat;background-position: 49% 55%;">
+						<span id="purpose-span-span"></span>
+					</span>
+					
+					<p class="vertical-center" id="purpose-text-header">
+						TECHNOLOGIES
+					</p>
+					<p class="vertical-center" id="purpose-cell-text">
+						The innovative ideas developed over the course of the mission will provide the technology for even more complex missions to outer solar system and beyond. Furthermore, some technologies may even be integrated into everyday life, allowing our own lives to be easier.
+					</p>
+					<div class="vertical-center" id="purpose-cell-cross"></div>
+				</div>
+			</td>
+			<td id="purpose-cell-smaller"></td>
+			<td id="purpose-cell" class="container">
+				<div id="purpose-cell-div" class="container">
+					<span class="vertical-center" id="purpose-cell-span" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(https://Ares.tianqifeng1.repl.co/purpose-colony-2.png);background-size: 400%;background-repeat: no-repeat;background-position: 70% 65%;">
+						<span id="purpose-span-span"></span>
+					</span>
+					
+					<p class="vertical-center" id="purpose-text-header">
+						SCIENCE
+					</p>
+					<p class="vertical-center" id="purpose-cell-text">
+						As well as technological, Ares will also provide many scientifical advancement to mankind. These scientific breakthroughs may even allow further advanced technologies to be developed. 
+					</p>
+					<div class="vertical-center" id="purpose-cell-cross"></div>
+				</div>
+			</td>
+			<td id="purpose-cell-smaller"></td>
+			<td id="purpose-cell" class="container">
+				<div id="purpose-cell-div" class="container">
+					<span class="vertical-center" id="purpose-cell-span" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(https://Ares.tianqifeng1.repl.co/purpose-stocks.png);background-size: 400%;background-repeat: no-repeat;background-position: 10% 100%;">
+						<span id="purpose-span-span"></span>
+					</span>
+					
+					<p class="vertical-center" id="purpose-text-header">
+						ECONOMY
+					</p>
+					<p class="vertical-center" id="purpose-cell-text">
+						As missions get more and more complex, the workforce must increase along with it. The Ares Program will create thousands of new jobs. Furthermore, Ares will open up and support entirely new industries.
+					</p>
+					<div class="vertical-center" id="purpose-cell-cross"></div>
+				</div>
+			</td>
+		</tr>
+
+
+		<tr style="height:5vh"></tr>
+
+
+		
+		<tr id="purpose-row">
+			<td id="purpose-cell" class="container">
+				<div id="purpose-cell-div" class="container">
+					<span class="vertical-center" id="purpose-cell-span" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(https://Ares.tianqifeng1.repl.co/purpose-fireworks.png);background-size: 200%;background-repeat: no-repeat;background-position: center;">
+						<span id="purpose-span-span"></span>
+					</span>
+					
+					<p class="vertical-center" id="purpose-text-header">
+						INSPIRATION AND EDUCATION
+					</p>
+					<p class="vertical-center" id="purpose-cell-text">
+						During the Ares Program, more and more people will be inspired and educated about the wonders of our Solar System. These people will become the next generation for human space exploration,
+					</p>
+					<div class="vertical-center" id="purpose-cell-cross"></div>
+				</div>
+			</td>
+			<td id="purpose-cell-smaller"></td>
+			<td id="purpose-cell" class="container">
+				<div id="purpose-cell-div" class="container">
+					<span class="vertical-center" id="purpose-cell-span" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(https://Ares.tianqifeng1.repl.co/purpose-world-map.png);background-size: 130%;background-repeat: no-repeat;background-position: center;">
+						<span id="purpose-span-span"></span>
+					</span>
+					
+					<p class="vertical-center" id="purpose-text-header">
+						INTERNATIONAL PEACE
+					</p>
+					<p class="vertical-center" id="purpose-cell-text">
+						As we work with our international partners to launch and progress through the Ares mission, we demonstrate peace for all mankind. Through this, we show that space travel crosses through both science and politics.
+					</p>
+					<div class="vertical-center" id="purpose-cell-cross"></div>
+				</div>
+			</td>
+			<td id="purpose-cell-smaller"></td>
+			<td id="purpose-cell" class="container">
+				<div id="purpose-cell-div" class="container">
+					<span class="vertical-center" id="purpose-cell-span" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(https://Ares.tianqifeng1.repl.co/purpose-earth.png);background-size: 100%;background-repeat: no-repeat;background-position: center;">
+						<span id="purpose-span-span"></span>
+					</span>
+					
+					<p class="vertical-center" id="purpose-text-header">
+						DIVERSITY AND EQUALITY
+					</p>
+					<p class="vertical-center" id="purpose-cell-text">
+						The Ares program will show that all people are equal on this planet by creating opportunites for people of all religions, races and genders to participate in this historic mission.
+					</p>
+					<div class="vertical-center" id="purpose-cell-cross"></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+
+
+
+	
+	
+
+
+
+<!-- footer -->
+	
+<div style="width:100vw;height:10vh;background-color:black">
+	<div style="color:white;margin-top:27.5vh;margin-bottom:10vh;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:2.5vh">
+		<a class="footer-text-left" style="margin-right:6vh" href="https://Ares.tianqifeng1.repl.co/">HOME</a>
+		<a class="footer-text-left" style="margin-right:6vh" href="https://Ares.tianqifeng1.repl.co/purpose/">PURPOSE</a>
+		<a class="footer-text-right" style="" href="https://Ares.tianqifeng1.repl.co/mission/">MISSION</a>
+		<a class="footer-text-right" style="margin-left:6vh" href="https://Ares.tianqifeng1.repl.co/components/">COMPONENTS</a>
+	</div>
+</div>
+	
+</body></center>
+
+
+	
+
+
+
+
+
+
+
+<!-- script -->
+
+<script src="https://Ares.tianqifeng1.repl.co/script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+	$(document).ready(function() {
+	$('#nav-icon4').click(function() {
+		$(this).toggleClass('open');		
+		  $('#menuNav').toggleClass("menu-open",function() {
+          $(this).remove();
+			});
+		
+			$('#menu-darkener').toggleClass("menu-darken",function() {
+          $(this).remove();
+			});
+			$('#menu-darkener-1').toggleClass("menu-darken",function() {
+          $(this).remove();
+			});
+
+			$('#body').toggleClass("overflow-disable",function() {
+          $(this).remove();
+			});
+
+			$('.menu-text').toggleClass("menu-text-show",function() {
+					$(this).remove();
+			});
+
+			$('.menu-text-underline').toggleClass("menu-text-underline-show",function() {
+					$(this).remove();
+			});
+		});
+	});
+
+	
+
+</script>
+
