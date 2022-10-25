@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+
+
+<!-- head -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MISSION | ARES</title>
+	<link href="https://Ares.tianqifeng1.repl.co/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="https://Ares.tianqifeng1.repl.co/Favicon.jpg">
+</head>
+
+
+<div id="screen-darkener"></div>
+
+
+<!-- body -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- style -->
+
+<style>
+	.container {
+		position: relative;
+	}
+
+	.vertical-center {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	.vertical-center-mission {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.horizontal-center {
+		margin: 0;
+		position: absolute;
+		left: 50%;
+		-ms-transform: translateYX-50%);
+		transform: translateX(-50%);
+	}
+
+	.horizontal-center-nav {
+		margin: 0;
+		position: absolute;
+		top: 8vh;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+</style>
+
+
+
+
+
+
+
+
+
+<!-- header nav and menu -->
+
+
+
+
+
+
+
+<div id="menu-darkener" style="width: 80vw;height: 100vh;background-color: rgba(0,0,0,0.5);position: fixed;z-index:10">
+</div>
+
+<nav id="topNav"
+	style="background-color:rgba(0,0,0,0);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;width:100%;height:125px;font-size:18.5px;z-index:5;position:fixed;border-width:0;border:0;border-bottom-width:0.5px;border-bottom-color:rgba(140,140,140,0.5);border-style:solid;">
+	<div style="color:white">
+		<a href="https://Ares.tianqifeng1.repl.co/">
+			<div id="menu-icon"
+				style="width:125px;height:125px;background-image:url(https://Ares.tianqifeng1.repl.co/LogoNoText.png);background-position:center;background-size:100%;position:absolute;z-index:10">
+				<span></span>
+			</div>
+		</a>
+		<div style="color:white">
+			<center>
+				<div class="vertical-center" style="position:absolute;padding:0;border:0;margin:0;width:100%;">
+					<a class="footer-text-left" href="https://ares.tianqifeng1.repl.co/" style="margin-right:4%">HOME</a>
+					<a class="footer-text-left" href="https://Ares.tianqifeng1.repl.co/purpose/">PURPOSE</a>
+					<a class="footer-text-right" href="https://Ares.tianqifeng1.repl.co/mission/"
+						style="margin-left:4%">MISSION</a>
+					<a class="footer-text-right" href="https://Ares.tianqifeng1.repl.co/components/"
+						style="margin-left:4%">COMPONENTS</a>
+				</div>
+			</center>
+		</div>
+</nav>
+
+
+
+
+<div id="menu-darkener-1"
+	style="width: 20vw;height: 100vh;background-color: rgba(0,0,0,0.5);position: fixed;right:0;z-index:10">
+</div>
+
+
+<nav id="menuNav"
+	style="height:100vh;width:20vw;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;top:0;color:white;background-color:black;border:0;margin:0;padding:0;text-align:right;position:fixed;margin-left:100vw;z-index:15">
+
+	<div style="margin-top:18vh;position:absolute;font-size:2.5vh;right:3vh;z-index:5;padding-right:3vw;width:15vw"
+		id="menu-text-container">
+		<a class="menu-text" href="https://ares.tianqifeng1.repl.co/" style="margin-top:2vh;position:absolute;right:0"
+			id="menu-text-1">
+			HOME
+			<span class="menu-text-underline" id="menu-text-underline-1"></span>
+		</a>
+
+		<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/purpose/"
+			style="margin-top:8vh;position:absolute;right:0" id="menu-text-2">
+			PURPOSE
+			<span class=menu-text-underline id="menu-text-underline-2"></span>
+		</a>
+
+		<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/mission/"
+			style="margin-top:14vh;position:absolute;right:0" id="menu-text-3">
+			THE MISSION
+			<span class=menu-text-underline id="menu-text-underline-3"></span>
+		</a>
+
+		<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/launch-vehicles/"
+			style="margin-top:20vh;position:absolute;right:0" id="menu-text-4">
+			LAUNCH VEHICLES
+			<span class=menu-text-underline id="menu-text-underline-4"></span>
+		</a>
+
+		<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/spacecraft/"
+			style="margin-top:26vh;position:absolute;right:0" id="menu-text-5">
+			SPACECRAFT
+			<span class=menu-text-underline id="menu-text-underline-5"></span>
+		</a>
+
+		<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/colony/"
+			style="margin-top:32vh;position:absolute;right:0" id="menu-text-6">
+			MARS COLONY
+			<span class=menu-text-underline id="menu-text-underline-6"></span>
+		</a>
+
+		<a class="menu-text" href="https://Ares.tianqifeng1.repl.co/components/mars-vehicles/"
+			style="margin-top:38vh;position:absolute;right:0" id="menu-text-7">
+			MDV/MAV
+			<span class=menu-text-underline id="menu-text-underline-7"></span>
+		</a>
+
+
+	</div>
+</nav>
+
+
+<div id="menu-click" style="position:fixed;width:16vh;height:16vh;top:0;right:0"></div>
+
+<div id="nav-icon4" style="position:fixed;margin-right:3vw;right:0;margin-top:6vh;top:0;z-index:20;">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- body content -->
+
+
+
+
+
+
+
+
+
+<body id="body" class="body"
+	style="background-color: black; width: 100vw; font-weight: 300; padding: 0px; border: 0px; margin: 0px;">
+	<center>
+
+
+		<div class="section-full-width-height home-cover" style="">
+			<img class="scrollIndicator" src="https://Ares.tianqifeng1.repl.co/Scrollindicator.png" height="33.5px"
+				width="32.5px" style="padding-top:90vh">
+			<p id="cover-text" class="vertical-center"
+				style="color:white;margin:0;border:0;padding-left:5vw;font-weight:100;font-size:7vh;letter-spacing:5vw;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+				MISSION
+			</p>
+		</div>
+
+
+		<div class="section-half-height" style=""></div>
+
+		<div class="section-full-width-height component-section container" id="destination-section">
+			<div class="component-text-container">
+				<p class="component-header component-reveals">MARS</p>
+				<p class="component-desc component-reveals">OUR DESTINATION</p>
+				<a href="https://Ares.tianqifeng1.repl.co/mission/destination">
+					<span class="component-button component-reveals">
+						<span>
+							<p class="component-button-text">LEARN MORE</p>
+						</span>
+					</span>
+				</a>
+			</div>
+		</div>
+
+
+		<div class="section-full-width-height container">
+			<p class="horizontal-center component-reveals" id="logo-header">MISSION LOGOS</p>
+			<div id="logo-section">
+				<img src="https://Ares.tianqifeng1.repl.co/NeutralAresSquare.jpg" id="logo-image"
+					class="vertical-center component-reveals">
+				<img src="https://Ares.tianqifeng1.repl.co/SquareNeutralAresA.png" id="logo-image-2"
+					class="vertical-center-mission component-reveals">
+				<span id="logo-1" class="logo-n component-reveals">
+					<p class="logo-head">ROUND SHAPE</p>
+					<p class="logo-text">The round design of the logo symbolises the round shape of the planets we leave from to
+						and return from. It also highlights the cylindrical shape of the spacecraft we design.</p>
+				</span>
+				<span id="logo-2" class="logo-n component-reveals">
+					<p class="logo-head">A</p>
+					<p class="logo-text">The A represents launch and progress, as well as the first letter of Ares and the two
+						previous human exploration missions (Apollo and Artemis).</p>
+				</span>
+				<span id="logo-3" class="logo-n component-reveals">
+					<p class="logo-head">RED SIDE</p>
+					<p class="logo-text">The red side of the logo symbolises our destination, the Red Planet.</p>
+				</span>
+				<span id="logo-4" class="logo-n component-reveals">
+					<p class="logo-head">BLUE SIDE</p>
+					<p class="logo-text">The blue side symbolises our home planet, Earth from which we launch. It is also the
+						color of the exhaust of our IPSC fusion engine.</p>
+				</span>
+			</div>
+		</div>
+
+
+		<div
+			style="color:white;background:linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url(https://Ares.tianqifeng1.repl.co/mars1.jpg);background-position:center;background-size:100%;font-size:5vh;padding-top:47.5vh;letter-spacing:10px;font-weight:400;padding-bottom:46vh;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:100">
+			HOW WE ARE GOING TO MARS
+		</div>
+
+
+
+		<div class="section-full-width-height container" id="mission-content-section">
+			<div class="vertical-center" id="mission-contents-container">
+				<a href="#phase-1">
+					<div class="mission-contents container">
+						<span class="mission-contents-phase-no vertical-center">PHASE 1</span>
+					</div>
+				</a>
+				<a href="#phase-2">
+					<div class="mission-contents container">
+						<span class="mission-contents-phase-no vertical-center">PHASE 2</span>
+					</div>
+				</a>
+				<a href="#phase-3">
+					<div class="mission-contents container">
+						<span class="mission-contents-phase-no vertical-center">PHASE 3</span>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="section-half-width-height"></div>
+
+		<div id="phase-1" class="container"
+			style="color:white;background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(https://Ares.tianqifeng1.repl.co/ipsc-lv.png);background-position:center;background-size:110%;font-size:5vh;padding-top:47.5vh;letter-spacing:10px;font-weight:400;padding-bottom:46vh;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:200">
+			PHASE I
+			<p class="vertical-center phase-cover-text" id="phase-1-text">IPSC CONSTRUCTION AND CREW LAUNCH</p>
+		</div>
+		<div class="quarter-space"></div>
+		<div id="phase-1-timeline-section" class="container">
+			<span class="timeline-line container horizontal-center">
+				<div class="timeline-1 horizontal-center"></div>
+				<div class="timeline-2 horizontal-center"></div>
+				<div class="timeline-3 horizontal-center"></div>
+				<div class="timeline-4 horizontal-center"></div>
+			</span>
+			<div class="timeline-section container" id="1-1-timeline-section">
+				<span class="timeline-text timeline-text-left container vertical-center-mission">
+					<h1 class="timeline-header">IPSC CONSTRUCTION</h1>
+					<p class="timeline-body">Our most powerful rocket to date, the IPSC Construction Vehicle, will launch the IPSC
+						segments into a Low Earth Orbit roughly 300 kilometers above the surface. Six of such segments will be
+						launched to complete the largest orbiting spacecraft ever constucted.</p>
+				</span>
+			</div>
+			<div class="timeline-section container" id="1-2-timeline-section">
+				<span class="timeline-text timeline-text-right container vertical-center-mission">
+					<h1 class="timeline-header">SUPPLY LAUNCHES</h1>
+					<p class="timeline-body">Following the completion of the Interplanetary Spacecraft, numerous supply missions
+						will dock to the station to transfer materials, fuel and life support to the vehicle. These supply modules
+						will later return to Earth.</p>
+				</span>
+			</div>
+			<div class="timeline-section container" id="1-3-timeline-section">
+				<span class="timeline-text timeline-text-left container vertical-center-mission">
+					<h1 class="timeline-header">CREW LAUNCH</h1>
+					<p class="timeline-body">Our crew, the final part of the IPSC, will be delivered to the orbiting spacecraft
+						via our Crew Transfer Vehicle. Aboard the station, the crew will be in contact with mission control,
+						ensuring that all systems are ready for deep space travel.</p>
+				</span>
+			</div>
+			<div class="timeline-section container" id="1-4-timeline-section">
+				<span class="timeline-text timeline-text-right container vertical-center-mission">
+					<h1 class="timeline-header">MARS TRANSFER</h1>
+					<p class="timeline-body">Once all systems have been checked and confirmed healthy and working, the IPSC will
+						ignite its Zeta-Pinch Torch Fusion Engine to propel the crew away from Earth towards their destination at
+						Mars. They will coast in space for several hundred days before reaching the Red Planet.</p>
+				</span>
+			</div>
+		</div>
+
+
+
+
+		<div id="phase-2" class="container"
+			style="color:white;background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(https://Ares.tianqifeng1.repl.co/marsbase3.jpg);background-position:center;background-size:100%;font-size:5vh;padding-top:47.5vh;letter-spacing:10px;font-weight:400;padding-bottom:46vh;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:200">
+			PHASE II
+			<p class="vertical-center phase-cover-text" id="phase-2-text">LANDING AND BASE CONSTRUCTION</p>
+		</div>
+		<div class="quarter-space"></div>
+		<div id="phase-2-timeline-section" class="container">
+			<span class="timeline-line-2-3 container horizontal-center">
+				<div class="timeline-1 horizontal-center"></div>
+				<div class="timeline-2 horizontal-center"></div>
+				<div class="timeline-3 horizontal-center"></div>
+				<div class="timeline-4 horizontal-center"></div>
+			</span>
+			<div class="timeline-section container" id="2-1-timeline-section">
+				<span class="timeline-text timeline-text-left container vertical-center-mission">
+					<h1 class="timeline-header">CAPTURE</h1>
+					<p class="timeline-body">After over a hundred days in interpanetary space, the crew finally reach their
+						destination. The Interplanetary Spacecraft ignites its engine once again to put itself into Low Mars Orbit.
+						Here, the crew check systems once again to ensure they are configured for landing.</p>
+				</span>
+			</div>
+			<div class="timeline-section container" id="2-2-timeline-section">
+				<span class="timeline-text timeline-text-right container vertical-center-mission">
+					<h1 class="timeline-header">SUPPLY LANDINGS</h1>
+					<p class="timeline-body">Before the crew land, supplies will first be delivered down to the landing site.
+						These supplies will house the materials needed to construct the factory on Mars, which will then construct
+						the Crew Colony.</p>
+				</span>
+			</div>
+			<div class="timeline-section container" id="2-3-timeline-section">
+				<span class="timeline-text timeline-text-left container vertical-center-mission">
+					<h1 class="timeline-header">CREW LANDING</h1>
+					<p class="timeline-body">The Mars Descent Vehicle will descend from the orbiting IPSC and land at the location
+						of the supplies. As well as the crew, the MDV will house the machines needed to construct the factory. After
+						it is assembled, it will spend over 50 days on the Martian surface printing the parts for the Mars Colony.
+					</p>
+				</span>
+			</div>
+			<div class="timeline-section container" id="2-4-timeline-section">
+				<span class="timeline-text timeline-text-right container vertical-center-mission">
+					<h1 class="timeline-header">SURFACE OPS</h1>
+					<p class="timeline-body">Once the colony is assembled, our crew will be able to live inside of it. During the
+						over 100 day stay on the planet, they will perform the first ever crew-conducted science on Mars. Also, they
+						will explore the rim of the landing site crater, as well as the area around it, using the MMSEV.</p>
+				</span>
+			</div>
+		</div>
+
+
+
+
+
+		<div id="phase-3" class="container"
+			style="color:white;background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(https://Ares.tianqifeng1.repl.co/ipsc.png);background-position:center;background-size:100%;font-size:5vh;padding-top:47.5vh;letter-spacing:10px;font-weight:400;padding-bottom:46vh;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:200">
+			PHASE III
+			<p class="vertical-center phase-cover-text" id="phase-2-text">MAV CONSTRUCTION AND RETURN</p>
+		</div>
+		<div class="quarter-space"></div>
+		<div id="phase-3-timeline-section" class="container">
+			<span class="timeline-line-3 container horizontal-center">
+				<div class="timeline-1 horizontal-center"></div>
+				<div class="timeline-2 horizontal-center"></div>
+				<div class="timeline-3 horizontal-center"></div>
+				<div class="timeline-4 horizontal-center"></div>
+			</span>
+			<div class="timeline-section container" id="3-1-timeline-section">
+				<span class="timeline-text timeline-text-left container vertical-center-mission">
+					<h1 class="timeline-header">MAV CONSTRUCTION</h1>
+					<p class="timeline-body">As the end of the surface mission approaches, the astronauts will utilize the factory
+						once again to construct the Mars Ascent Vehicle. Upon completion, it will be moved to Mars Launch Complex 1
+						in preparation for it to ascend to the IPSC.</p>
+				</span>
+			</div>
+			<div class="timeline-section container" id="3-2-timeline-section">
+				<span class="timeline-text timeline-text-right container vertical-center-mission">
+					<h1 class="timeline-header">LAUNCH TO IPSC</h1>
+					<p class="timeline-body">At the optimum time, the MTV will launch to rendezvous with the IPSC. Due to the
+						thinner atmosphere and lower gravity, launching on Mars will be significantly easier than launch here on
+						Earth. It will dock to the IPSC as the crew return to their quarters.</p>
+				</span>
+			</div>
+			<div class="timeline-section container" id="3-3-timeline-section">
+				<span class="timeline-text timeline-text-left container vertical-center-mission">
+					<h1 class="timeline-header">EARTH TRANSFER</h1>
+					<p class="timeline-body">The IPSC will, once again, start up its engine and push the spacecraft back to Earth.
+						The journey will span around a hundred days, just like the arrival journey. As it nears Earth, it will use a
+						Lunar Gravity assist to slow the spacecraft down in preparation for the capture burn.</p>
+				</span>
+			</div>
+			<div class="timeline-section container" id="3-4-timeline-section">
+				<span class="timeline-text timeline-text-right container vertical-center-mission">
+					<h1 class="timeline-header">CAPTURE AND REENTRY</h1>
+					<p class="timeline-body">After over a year since the first segment launch, the IPSC starts its engine for the
+						final time to put it into a Low Earth Orbit - an orbit just like the one it began with. The crew module will
+						detach and perform its deorbit burn. It will reenter Earths atmosphere at over 20,000 kilometers per hour
+						and splash down in the pacific ocean.</p>
+				</span>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<!-- footer -->
+
+		<div style="width:100vw;height:10vh;background-color:black">
+			<div
+				style="color:white;margin-top:27.5vh;margin-bottom:10vh;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:2.5vh">
+				<a class="footer-text-left" style="margin-right:6vh" href="https://Ares.tianqifeng1.repl.co/">HOME</a>
+				<a class="footer-text-left" style="margin-right:6vh"
+					href="https://Ares.tianqifeng1.repl.co/purpose/">PURPOSE</a>
+				<a class="footer-text-right" style="" href="https://Ares.tianqifeng1.repl.co/mission/">MISSION</a>
+				<a class="footer-text-right" style="margin-left:6vh"
+					href="https://Ares.tianqifeng1.repl.co/components/">COMPONENTS</a>
+			</div>
+		</div>
+
+</body>
+</center>
+
+
+
+
+
+
+
+
+
+
+<!-- script -->
+
+<script src="https://Ares.tianqifeng1.repl.co/script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+	$(document).ready(function () {
+		$('#nav-icon4').click(function () {
+			$(this).toggleClass('open');
+			$('#menuNav').toggleClass("menu-open", function () {
+				$(this).remove();
+			});
+
+			$('#menu-darkener').toggleClass("menu-darken", function () {
+				$(this).remove();
+			});
+			$('#menu-darkener-1').toggleClass("menu-darken", function () {
+				$(this).remove();
+			});
+
+			$('#body').toggleClass("overflow-disable", function () {
+				$(this).remove();
+			});
+
+			$('.menu-text').toggleClass("menu-text-show", function () {
+				$(this).remove();
+			});
+
+			$('.menu-text-underline').toggleClass("menu-text-underline-show", function () {
+				$(this).remove();
+			});
+		});
+	});
+
+
+	$(document).ready(function () {
+		// Add smooth scrolling to all links
+		$("a").on('click', function (event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function () {
+
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				});
+			} // End if
+		});
+	});
+</script>
