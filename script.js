@@ -57,6 +57,7 @@ function reveal() {
 	var reveals5 = document.querySelectorAll(".location-row");
 	var reveals6 = document.querySelectorAll(".location-text");
 	var reveals7 = document.querySelectorAll(".component-reveals");
+	var reveals8 = document.querySelectorAll(".mars-counter-text");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
@@ -133,6 +134,17 @@ function reveal() {
       reveals7[i].classList.add("active7");
     } else {
       reveals7[i].classList.remove("active7");
+    }
+  }
+	for (var i = 0; i < reveals8.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals8[i].getBoundingClientRect().top;
+    var elementVisible = 0;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals8[i].classList.add("active8");
+    } else {
+      reveals8[i].classList.remove("active8");
     }
   }
 }

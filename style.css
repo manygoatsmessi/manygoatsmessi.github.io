@@ -1241,6 +1241,16 @@ tr-span:hover {
 .mars-counter-text {
 	position: relative;
 	font-size: 20px;
+	opacity:0;
+	visibility:hidden;
+	transition:1s;
+	transition-delay: 0s;
+}
+
+.mars-counter-text.active8 {
+	opacity:1;
+	visibility:visible;
+	transition-delay: 1s;
 }
 
 #mars-counter-1 {
@@ -1253,7 +1263,7 @@ tr-span:hover {
 
 #mars-counter-number-months.active4::after {
 	content: counter(count);
-	animation: months-counter-anim 1.5s cubic-bezier(0, 0.75, 0, 0.99);
+	animation: months-counter-anim 2.5s cubic-bezier(0, 0.75, 0, 0.99);
 	counter-reset: count 5;
 }
 
@@ -1261,16 +1271,16 @@ tr-span:hover {
   0% {
     counter-increment: count -5;
   }
-  20% {
+  10% {
     counter-increment: count -4;
   }
-  40% {
+  25% {
     counter-increment: count -3;
   }
-  60% {
+  50% {
     counter-increment: count -2;
   }
-  80% {
+  75% {
     counter-increment: count -1;
   }
   100% {
@@ -1280,126 +1290,126 @@ tr-span:hover {
 
 #mars-counter-number-gravity.active4::after {
 	content: counter(count);
-	animation: gravity-counter-anim 1.5s cubic-bezier(0, 0.75, 0, 0.99);
+	animation: gravity-counter-anim 3s cubic-bezier(0, 0.75, 0, 0.99);
 	counter-reset: count 38;
 }
 
 @keyframes gravity-counter-anim {
-  2.6% {
+  1% {
     counter-increment: count -38;
   }
-  5.2% {
+  2% {
     counter-increment: count -37;
   }
-  7.8% {
+  3% {
     counter-increment: count -36;
   }
-  10.4% {
+  4% {
     counter-increment: count -35;
   }
-  13% {
+  5% {
     counter-increment: count -34;
   }
-  15.6% {
+  6% {
     counter-increment: count -33;
   }
-	18.2% {
+	7% {
     counter-increment: count -32;
   }
-  20.8% {
+  8% {
     counter-increment: count -31;
   }
-  23.4% {
+  9% {
     counter-increment: count -30;
   }
-  26% {
+  10% {
     counter-increment: count -29;
   }
-  28.6% {
+  11% {
     counter-increment: count -28;
   }
-  31.2% {
+  12% {
     counter-increment: count -27;
   }
-	33.8% {
+	13% {
     counter-increment: count -26;
   }
-  36.4% {
+  14% {
     counter-increment: count -25;
   }
-  39% {
+  15% {
     counter-increment: count -24;
   }
-  41.6% {
+  16% {
     counter-increment: count -23;
   }
-  44.2% {
+  17% {
     counter-increment: count -22;
   }
-  46.8% {
+  18% {
     counter-increment: count -21;
   }
-	49.4% {
+	20% {
     counter-increment: count -20;
   }
-  50% {
+  22% {
     counter-increment: count -19;
   }
-  50.6% {
+  24% {
     counter-increment: count -18;
   }
-  53.2% {
+  26% {
     counter-increment: count -17;
   }
-  55.8% {
+  28% {
     counter-increment: count -16;
   }
-  58.4% {
+  30% {
     counter-increment: count -15;
   }
-	61% {
+	32% {
     counter-increment: count -14;
   }
-  63.6% {
+  34% {
     counter-increment: count -13;
   }
-  66.2% {
+  36% {
     counter-increment: count -12;
   }
-  68.8% {
+  38% {
     counter-increment: count -11;
   }
-  71.4% {
+  40% {
     counter-increment: count -10;
   }
-  74% {
+  43% {
     counter-increment: count -10;
   }
-	76.6% {
+	46% {
     counter-increment: count -9;
   }
-  79.2% {
+  49% {
     counter-increment: count -8;
   }
-  81.8% {
+  52% {
     counter-increment: count -7;
   }
-  84.4% {
+  55% {
     counter-increment: count -6;
   }
-  87% {
+  60% {
     counter-increment: count -5;
   }
-  89.6% {
+  64% {
     counter-increment: count -4;
   }
-	92.2% {
+	72% {
     counter-increment: count -3;
   }
-  94.8% {
+  80% {
     counter-increment: count -2;
   }
-  97.4% {
+  90% {
     counter-increment: count -1;
   }
 	100% {
@@ -1413,126 +1423,126 @@ tr-span:hover {
 
 #mars-counter-number-distance.active4::after {
 	content: counter(count);
-	animation: distance-counter-anim 1.5s cubic-bezier(0, 0.75, 0, 0.99);
+	animation: distance-counter-anim 3s cubic-bezier(0, 0.75, 0, 0.99);
 	counter-reset: count 225;
 }
 
 @keyframes distance-counter-anim {
-  2.6% {
+  1% {
     counter-increment: count -225;
   }
-  5.2% {
+  2% {
     counter-increment: count -211;
   }
-  7.8% {
+  3% {
     counter-increment: count -204;
   }
-  10.4% {
+  4% {
     counter-increment: count -197;
   }
-  13% {
+	5% {
     counter-increment: count -190;
   }
-  15.6% {
+  6% {
     counter-increment: count -183;
   }
-	18.2% {
+	7% {
     counter-increment: count -175;
   }
-  20.8% {
+  8% {
     counter-increment: count -167;
   }
-  23.4% {
+  9% {
     counter-increment: count -159;
   }
-  26% {
+  10% {
     counter-increment: count -151;
   }
-  28.6% {
+  11% {
     counter-increment: count -143;
   }
-  31.2% {
+  13% {
     counter-increment: count -135;
   }
-	33.8% {
+	14% {
     counter-increment: count -127;
   }
-  36.4% {
+  15% {
     counter-increment: count -119;
   }
-  39% {
+  16% {
     counter-increment: count -111;
   }
-  41.6% {
+  17% {
     counter-increment: count -103;
   }
-  44.2% {
+  18% {
     counter-increment: count -96;
   }
-  46.8% {
+  20% {
     counter-increment: count -89;
   }
-	49.4% {
+	22% {
     counter-increment: count -82;
   }
-  50% {
+  24% {
     counter-increment: count -75;
   }
-  50.6% {
+  26% {
     counter-increment: count -68;
   }
-  53.2% {
+  28% {
     counter-increment: count -60;
   }
-  55.8% {
+  30% {
     counter-increment: count -52;
   }
-  58.4% {
+  32% {
     counter-increment: count -44;
   }
-	61% {
+	34% {
     counter-increment: count -36;
   }
-  63.6% {
+  36% {
     counter-increment: count -28;
   }
-  66.2% {
+  38% {
     counter-increment: count -20;
   }
-  68.8% {
+  40% {
     counter-increment: count -18;
   }
-  71.4% {
-    counter-increment: count -16;
+  42% {
+    counter-increment: count -15;
   }
-  74% {
-    counter-increment: count -14;
-  }
-	76.6% {
+	44% {
     counter-increment: count -12;
   }
-  79.2% {
+	47% {
     counter-increment: count -10;
   }
-  81.8% {
+  49% {
     counter-increment: count -8;
   }
-  84.4% {
+  54% {
+    counter-increment: count -7;
+  }
+  59% {
     counter-increment: count -6;
   }
-  87% {
+  63% {
     counter-increment: count -5;
   }
-  89.6% {
+  68% {
     counter-increment: count -4;
   }
-	92.2% {
+	74% {
     counter-increment: count -3;
   }
-  94.8% {
+  80% {
     counter-increment: count -2;
   }
-  97.4% {
+  88% {
     counter-increment: count -1;
   }
 	100% {
@@ -1760,7 +1770,7 @@ tr-span:hover {
 }
 
 #mdav-section {
-	background: url(.png);
+	background: url(mdv1.png);
 	background-size:110%;
 	background-position:center;
 }
@@ -1845,5 +1855,5 @@ tr-span:hover {
 }
 
 #destination-cover {
-		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://Ares.tianqifeng1.repl.co/mars-cinematic.png);
+		background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://Ares.tianqifeng1.repl.co/mars-cinematic.png);
 }
